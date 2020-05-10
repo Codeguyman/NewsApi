@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("C:\Users\john\appRest\src\omo.jpg"); 
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<p></p>
+
+</body>
+</html>
+
+<div *ngFor="let article of articles">
+  <h2>{{article.title}}</h2>
+
+    <p>
+      {{article.description}}
+    </p>
+    <a href="{{article.url}}">Read full article</a>
+</div>
+
+  <router-outlet></router-outlet>
